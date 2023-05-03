@@ -1,6 +1,6 @@
 package com.zipcodewilmington.froilansfarm;
 
-public  class Animal {
+public class Animal {
     private int legs;
     private String eyes;
     private String color;
