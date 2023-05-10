@@ -18,4 +18,8 @@ public class Chicken extends Animal implements Produce {
     public void eat(Edible edible) {
 
     }
+
+    public void yield(Edible edible) {
+
+    }
 }
