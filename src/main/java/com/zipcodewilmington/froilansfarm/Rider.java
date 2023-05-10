@@ -7,5 +7,4 @@ public interface Rider {
 
 
 
-
 }

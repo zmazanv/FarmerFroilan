@@ -10,8 +10,6 @@ public class Farmer extends Person implements Eater, Rider, Botanist {
 
 
 
-
-
     public void mount(Rideable rideable) {
 
     }
