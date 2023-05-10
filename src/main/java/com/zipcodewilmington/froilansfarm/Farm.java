@@ -15,26 +15,32 @@ public class Farm {
     }
 
     public Stable[] getStables() {
+
         return stables;
     }
 
     public void setStables(Stable[] stables) {
+
         this.stables = stables;
     }
 
     public ChickenCoop[] getChickenCoops() {
+
         return chickenCoops;
     }
 
     public void setChickenCoops(ChickenCoop[] chickenCoops) {
+
         this.chickenCoops = chickenCoops;
     }
 
     public FarmHouse getFarmHouse() {
+
         return farmHouse;
     }
 
     public void setFarmHouse(FarmHouse farmHouse) {
+
         this.farmHouse = farmHouse;
     }
 

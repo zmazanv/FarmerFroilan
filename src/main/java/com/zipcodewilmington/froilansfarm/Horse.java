@@ -4,9 +4,27 @@ import com.zipcodewilmington.froilansfarm.interfaces.Rideable;
 
 public class Horse extends Animal implements Rideable {
 
-    int legs;
 
-    public Horse(int legs){
-        this.legs = legs;
+    public Horse(int legs, String eyes, String color) {
+
+        super(legs, eyes, color);
+    }
+
+    public void makeNoise() {
+
+        System.out.println("heeeeeuhhhhhh");
+
+    }
+
+    public void mount() {
+
+    }
+
+    public void dismount() {
+
+    }
+
+    public void eat(Edible edible) {
+
     }
 }
