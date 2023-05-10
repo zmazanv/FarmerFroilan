@@ -2,6 +2,7 @@ package com.zipcodewilmington.froilansfarm;
 
 import com.zipcodewilmington.froilansfarm.interfaces.NoiseMaker;
 import com.zipcodewilmington.froilansfarm.interfaces.Eater;
+import com.zipcodewilmington.froilansfarm.interfaces.Rider;
 
 public abstract class Person implements NoiseMaker,Eater,Rider {
 

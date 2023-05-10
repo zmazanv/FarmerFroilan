@@ -7,11 +7,12 @@ public class Farm {
     private Stable[] stables;
     private ChickenCoop[] chickenCoops;
     private FarmHouse farmHouse;
-
-    public Farm(Stable[] stables, ChickenCoop[] chickenCoops, FarmHouse farmHouse){
+    private Field field;
+    public Farm(Field field,Stable[] stables, ChickenCoop[] chickenCoops, FarmHouse farmHouse){
         this.stables = stables;
         this.chickenCoops = chickenCoops;
         this.farmHouse = farmHouse;
+        this.field = field;
     }
 
     public Stable[] getStables() {

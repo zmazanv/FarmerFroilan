@@ -3,8 +3,10 @@ package com.zipcodewilmington.froilansfarm;
 import com.zipcodewilmington.froilansfarm.interfaces.Botanist;
 import com.zipcodewilmington.froilansfarm.interfaces.Eater;
 import com.zipcodewilmington.froilansfarm.interfaces.Edible;
+import com.zipcodewilmington.froilansfarm.interfaces.Rideable;
+import com.zipcodewilmington.froilansfarm.interfaces.Rider;
 
-public class Farmer extends Person implements Eater, Rider, Botanist {
+public class Farmer extends Person implements Eater, Rider, Botanist{
 
 
     private Horse[] horses;
@@ -38,4 +40,7 @@ public class Farmer extends Person implements Eater, Rider, Botanist {
     }
 
 
+    public void makeNoise() {
+        System.out.println("YEEEHAAAAWWWWW");
+    }
 }

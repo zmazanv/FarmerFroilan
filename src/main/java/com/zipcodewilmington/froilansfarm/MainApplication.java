@@ -1,5 +1,7 @@
 package com.zipcodewilmington.froilansfarm;
 
+import com.zipcodewilmington.froilansfarm.interfaces.Edible;
+import com.zipcodewilmington.froilansfarm.interfaces.Produce;
 /**
  * Created by leon on 2/26/18.
  */
@@ -11,7 +13,7 @@ public class MainApplication {
         // Create the Chicken objects using a loop
         Chicken[] chickens = new Chicken[15];
         for (int i = 0; i < chickens.length; i++) {
-            chickens[i] = new Chicken(2,"2","white");
+            chickens[i] = new Chicken();
         }
 
 // Create the ChickenCoops using the Chicken arrays
@@ -35,19 +37,19 @@ public class MainApplication {
         stables[1] = new Stable(new Horse[] { horses[4], horses[5], horses[6], horses[7] });
         stables[2] = new Stable(new Horse[] { horses[8], horses[9] });
 
-        Crop cropOne = new Crop();
-        Crop cropTwo = new Crop();
-        Crop cropThree = new Crop();
-        Crop cropFour = new Crop();
+        Crop corn = new Cornstalk();
+        Crop tomato = new TomatoPlant();
 
-        Crop[] crops = {cropOne,cropTwo};
-        Crop[] cropsTwo = {cropThree,cropFour};
 
-        CropRow cropRowOne = new CropRow(crops);
-        CropRow cropRowTwo = new CropRow(cropsTwo);
-        CropRow[] cropRows = {cropRowOne,cropRowTwo};
+// Create the crop rows
+        CropRow rowOne = new CropRow(new Crop[] {corn});
+        CropRow rowTwo = new CropRow(new Crop[] {tomato});
+        CropRow rowThree = new CropRow(new Crop[] {});
+        CropRow rowFour = new CropRow(new Crop[] {});
+        CropRow rowFive = new CropRow(new Crop[] {});
 
-        Field froilansField = new Field(cropRows);
+// Add the crop rows to the field
+        Field field = new Field(new CropRow[] {rowOne, rowTwo, rowThree, rowFour, rowFive});
 
         Farmer froilan = new Farmer("Froilan");
         PickupTruck froilansTruck = new PickupTruck("Ford","Cream");

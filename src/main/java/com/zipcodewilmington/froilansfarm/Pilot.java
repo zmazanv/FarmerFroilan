@@ -1,9 +1,10 @@
 package com.zipcodewilmington.froilansfarm;
 
 import com.zipcodewilmington.froilansfarm.interfaces.Edible;
-
+import com.zipcodewilmington.froilansfarm.interfaces.Rideable;
 public class Pilot extends Person {
-private Aircraft<Vehicle> aircraft;
+
+private Aircraft aircraft;
 
     public Pilot(String name) {
         super(name);
@@ -25,7 +26,7 @@ private Aircraft<Vehicle> aircraft;
         System.out.println("YEEEEEHAAWWWWWW");
     }
 
-    public void setAircraft(Aircraft<Vehicle> aircraft) {
+    public void setAircraft(Aircraft aircraft) {
         this.aircraft = aircraft;
     }
 }
