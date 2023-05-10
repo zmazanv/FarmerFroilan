@@ -7,8 +7,14 @@ import com.zipcodewilmington.froilansfarm.interfaces.Edible;
 public class Farmer extends Person implements Eater, Rider, Botanist {
 
 
+    private Horse[] horses;
+
+    private FarmVehicle[] farmVehicles;
 
 
+    public Farmer(String name) {
+        super(name);
+    }
 
     public void mount(Rideable rideable) {
 
@@ -25,4 +31,11 @@ public class Farmer extends Person implements Eater, Rider, Botanist {
     public void plant(Crop crop, CropRow cropRow) {
 
     }
+
+
+    public void setHorses(Horse[] horses) {
+        this.horses = horses;
+    }
+
+
 }

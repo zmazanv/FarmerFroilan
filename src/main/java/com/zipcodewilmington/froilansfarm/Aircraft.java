@@ -2,7 +2,7 @@ package com.zipcodewilmington.froilansfarm;
 
 import com.zipcodewilmington.froilansfarm.interfaces.NoiseMaker;
 
-public abstract class Aircraft<F extends Vehicle> implements Rideable, NoiseMaker {
+public abstract class Aircraft extends Vehicle implements Rideable, NoiseMaker {
 
     public Aircraft() {
 
