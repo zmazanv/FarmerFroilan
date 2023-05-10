@@ -1,7 +1,5 @@
 package com.zipcodewilmington.froilansfarm;
 
-import java.util.Arrays;
-
 public class Stable{
 
     private Horse[] horses;
@@ -11,17 +9,11 @@ public class Stable{
     }
 
     public Horse[] getHorses() {
-        return horses;
+        return this.horses;
     }
 
     public void setHorses(Horse[] horses) {
         this.horses = horses;
     }
 
-    @Override
-    public String toString() {
-        return "Stable{" +
-                "horses=" + Arrays.toString(horses) +
-                '}';
-    }
 }

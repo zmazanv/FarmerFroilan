@@ -10,10 +10,13 @@ private Aircraft aircraft;
         super(name);
     }
 
+    public void setAircraft(Aircraft aircraft) {
+        this.aircraft = aircraft;
+    }
+
     public void mount(Rideable rideable) {
         System.out.println("Mounting " + aircraft.toString());
     }
-
     public void dismount(Rideable rideable) {
         System.out.println("Dismounting " + aircraft.toString());
     }
@@ -21,12 +24,8 @@ private Aircraft aircraft;
     public void eat(Edible edible) {
         System.out.println(getName() + "is eating an" + edible );
     }
-
     public void makeNoise() {
         System.out.println("YEEEEEHAAWWWWWW");
     }
 
-    public void setAircraft(Aircraft aircraft) {
-        this.aircraft = aircraft;
-    }
 }

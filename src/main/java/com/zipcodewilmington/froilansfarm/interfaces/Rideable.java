@@ -1,8 +1,3 @@
 package com.zipcodewilmington.froilansfarm.interfaces;
 
-public interface Rideable {
-
-
-
-
-}
+public interface Rideable {}
