@@ -5,7 +5,7 @@ import com.zipcodewilmington.froilansfarm.interfaces.NoiseMaker;
 
 public abstract class Animal implements NoiseMaker, Eater {
 
-cd
+
 
     private int legs;
     private String eyes;

@@ -6,6 +6,7 @@ public class Horse extends Animal implements Rideable{
 
 
     public Horse(int legs, String eyes, String color) {
+
         super(legs, eyes, color);
     }
 
