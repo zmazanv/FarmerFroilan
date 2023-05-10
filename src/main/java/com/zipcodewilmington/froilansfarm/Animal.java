@@ -5,9 +5,7 @@ import com.zipcodewilmington.froilansfarm.interfaces.NoiseMaker;
 
 public abstract class Animal implements NoiseMaker, Eater {
 
-
-
-public abstract class Animal {}
+    public void eat(Edible edible) {}
+    public void makeNoise(){}
 
 }
-
