@@ -1,13 +1,13 @@
 package com.zipcodewilmington.froilansfarm;
 
 import com.zipcodewilmington.froilansfarm.interfaces.Rideable;
-
+import com.zipcodewilmington.froilansfarm.interfaces.Edible;
 public class Horse extends Animal implements Rideable {
 
 
     public Horse(int legs, String eyes, String color) {
 
-        super(legs, eyes, color);
+        super();
     }
 
     public void makeNoise() {
@@ -27,4 +27,6 @@ public class Horse extends Animal implements Rideable {
     public void eat(Edible edible) {
 
     }
+
+
 }
