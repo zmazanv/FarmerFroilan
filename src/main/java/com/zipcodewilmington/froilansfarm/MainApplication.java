@@ -5,4 +5,22 @@ package com.zipcodewilmington.froilansfarm;
  */
 public class MainApplication {
 
+    public static void main(String[] args) {
+
+
+Farmer froilan = new Farmer("Froilan");
+public Farm(Stable[] stables, ChickenCoop[] chickenCoops, FarmHouse farmHouse)
+
+
+
+
+
+
+
+
+
+
+    }
+
+
 }
