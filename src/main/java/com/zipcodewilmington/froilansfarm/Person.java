@@ -1,5 +1,5 @@
 package com.zipcodewilmington.froilansfarm;
 
-public class Person {
+public abstract class Person {
 
 }
