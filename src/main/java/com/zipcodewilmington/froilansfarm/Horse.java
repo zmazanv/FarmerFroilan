@@ -1,8 +1,8 @@
 package com.zipcodewilmington.froilansfarm;
 
-import com.zipcodewilmington.froilansfarm.interfaces.Edible;
+import com.zipcodewilmington.froilansfarm.interfaces.Rideable;
 
-public class Horse extends Animal implements Rideable{
+public class Horse extends Animal implements Rideable {
 
 
     public Horse(int legs, String eyes, String color) {
