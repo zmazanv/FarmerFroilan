@@ -1,6 +1,12 @@
 package com.zipcodewilmington.froilansfarm;
+import com.zipcodewilmington.froilansfarm.interfaces.Eater;
+import com.zipcodewilmington.froilansfarm.interfaces.Edible;
+import com.zipcodewilmington.froilansfarm.interfaces.NoiseMaker;
 
-public class Animal {
+public abstract class Animal implements NoiseMaker, Eater {
+
+
+
     private int legs;
     private String eyes;
     private String color;
@@ -17,6 +23,7 @@ public class Animal {
     }
 
     public int getLegs() {
+
         return legs;
     }
 
@@ -25,20 +32,28 @@ public class Animal {
     }
 
     public String getEyes() {
+
         return eyes;
     }
 
     public void setEyes(String eyes) {
+
         this.eyes = eyes;
     }
 
     public String getColor() {
+
         return color;
     }
 
     public void setColor(String color) {
+
         this.color = color;
     }
 
+
+    public abstract void makeNoise();
+
+    public abstract void eat(Edible edible);
 
 }
