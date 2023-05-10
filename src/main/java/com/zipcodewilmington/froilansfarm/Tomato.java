@@ -1,4 +1,5 @@
 package com.zipcodewilmington.froilansfarm;
 
-public class Tomato {
-}
+import com.zipcodewilmington.froilansfarm.interfaces.Edible;
+
+public class Tomato implements Edible {}

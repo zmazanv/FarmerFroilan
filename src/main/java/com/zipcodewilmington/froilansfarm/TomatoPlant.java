@@ -1,18 +1,23 @@
 package com.zipcodewilmington.froilansfarm;
 
-public class TomatoPlant extends Crop{
+import com.zipcodewilmington.froilansfarm.interfaces.Edible;
 
-    private Tomato tomato;
+public class TomatoPlant extends Crop {
 
-    public TomatoPlant(Tomato tomato) {
-        this.tomato = tomato;
+    public TomatoPlant() {
+        super();
     }
 
-    public Tomato getTomato() {
-        return tomato;
+    public TomatoPlant(boolean hasBeenHarvested) {
+        super(hasBeenHarvested);
     }
 
-    public void setTomato(Tomato tomato) {
-        this.tomato = tomato;
+    public Edible yield() {
+        if (this.isHarvested()) {
+            this.restartCycle();
+            return new Tomato();
+        } else {
+            return null;
+        }
     }
 }
