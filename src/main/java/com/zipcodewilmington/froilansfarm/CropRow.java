@@ -29,4 +29,8 @@ public class CropRow {
         this.row.addAll(crops);
     }
 
+    public List<Crop> getRow() {
+        return this.row;
+    }
+
 }

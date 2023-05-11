@@ -29,4 +29,8 @@ public class Field {
         this.area.addAll(cropRows);
     }
 
+    public List<CropRow> getArea() {
+        return this.area;
+    }
+
 }

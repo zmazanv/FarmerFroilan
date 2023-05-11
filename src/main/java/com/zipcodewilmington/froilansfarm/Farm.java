@@ -23,6 +23,9 @@ public class Farm {
     public Stable[] getStables() {
         return this.stables;
     }
+    public Field getField() {
+        return this.field;
+    }
 
     public void setChickenCoops(ChickenCoop[] chickenCoops) {
         this.chickenCoops = chickenCoops;
