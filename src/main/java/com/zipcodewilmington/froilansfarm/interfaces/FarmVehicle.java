@@ -1,7 +1,9 @@
 package com.zipcodewilmington.froilansfarm.interfaces;
 
-import com.zipcodewilmington.froilansfarm.Farm;
+import com.zipcodewilmington.froilansfarm.classes.Farm;
 
 public interface FarmVehicle {
-    public abstract void operate(Farm farm);
+
+    void operate(Farm farm);
+
 }

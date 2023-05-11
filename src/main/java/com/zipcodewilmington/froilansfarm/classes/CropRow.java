@@ -1,4 +1,4 @@
-package com.zipcodewilmington.froilansfarm;
+package com.zipcodewilmington.froilansfarm.classes;
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -19,6 +19,10 @@ public class CropRow {
         this.row.addAll(crops);
     }
 
+    public List<Crop> whichCrops() {
+        return this.row;
+    }
+
     public void store(Crop crop) {
         this.row.add(crop);
     }
@@ -27,6 +31,12 @@ public class CropRow {
     }
     public void store(List<Crop> crops) {
         this.row.addAll(crops);
+    }
+
+    public void fertilize() {
+        for (Crop crop : this.row) {
+            crop.fertilize();
+        }
     }
 
 }
