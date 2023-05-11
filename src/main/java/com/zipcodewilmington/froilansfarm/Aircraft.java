@@ -5,11 +5,10 @@ import com.zipcodewilmington.froilansfarm.interfaces.Rideable;
 
 public abstract class Aircraft extends Vehicle implements Rideable, NoiseMaker {
 
-    public Aircraft() {
-
-    }
+    public Aircraft() {}
 
     public abstract void fly();
 
     public abstract void makeNoise();
+
 }

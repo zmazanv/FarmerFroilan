@@ -1,11 +1,10 @@
 package com.zipcodewilmington.froilansfarm;
 
+import com.zipcodewilmington.froilansfarm.interfaces.FarmVehicle;
+
 public class CropDuster extends Aircraft implements FarmVehicle {
 
-
-    public CropDuster() {
-
-}
+    public CropDuster() {}
 
     public void operate(Farm farm) {
         System.out.println("Operating on " + farm);
@@ -21,4 +20,5 @@ public class CropDuster extends Aircraft implements FarmVehicle {
     public void fertalize(CropRow cropRow) {
         System.out.println("Fertalizing " + cropRow);
     }
+
 }

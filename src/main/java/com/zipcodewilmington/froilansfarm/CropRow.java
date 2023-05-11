@@ -8,8 +8,7 @@ public class CropRow {
 
     private final List<Crop> row = new LinkedList<Crop>();
 
-    public CropRow() {
-    }
+    public CropRow() {}
     public CropRow(Crop crop) {
         this.row.add(crop);
     }
