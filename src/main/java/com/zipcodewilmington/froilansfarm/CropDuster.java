@@ -1,6 +1,6 @@
 package com.zipcodewilmington.froilansfarm;
 
-public class CropDuster extends Aircraft<FarmVehicle>  {
+public class CropDuster extends Aircraft implements FarmVehicle  {
 
 
     public CropDuster() {
@@ -19,6 +19,7 @@ public class CropDuster extends Aircraft<FarmVehicle>  {
         System.out.println(" 'FLYING NOISE' ");
     }
     public void fertalize(CropRow cropRow) {
+        cropRow.fertilized();
         System.out.println("Fertalizing " + cropRow);
     }
 }

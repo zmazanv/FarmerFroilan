@@ -1,25 +1,34 @@
 package com.zipcodewilmington.froilansfarm;
 
 import com.zipcodewilmington.froilansfarm.interfaces.Edible;
+import com.zipcodewilmington.froilansfarm.interfaces.Produce;
 
 public class Chicken extends Animal implements Produce {
 
-    int wings;
+    boolean hasBeenFertilized;
 
-    public Chicken(int legs, String eyes, String color, int wings){
-        super(legs, eyes, color);
-        this.wings = wings;
+    public Chicken() {
+        this.hasBeenFertilized = false;
+    }
+    public Chicken(boolean hasBeenFertilized) {
+        this.hasBeenFertilized = hasBeenFertilized;
     }
 
-    public void makeNoise() {
-        System.out.println("bok bok bok");
+    public void fertilize() {
+        this.hasBeenFertilized = true;
     }
 
-    public void eat(Edible edible) {
-
+    public boolean isFertilized() {
+        return this.hasBeenFertilized;
     }
 
-    public void yield(Edible edible) {
-
+    public Edible yield() {
+        if (this.hasBeenFertilized) {
+            this.hasBeenFertilized = false;
+            return new EdibleEgg();
+        } else {
+            return null;
+        }
     }
+
 }

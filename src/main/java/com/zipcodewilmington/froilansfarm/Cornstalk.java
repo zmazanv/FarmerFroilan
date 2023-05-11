@@ -2,20 +2,19 @@ package com.zipcodewilmington.froilansfarm;
 
 import com.zipcodewilmington.froilansfarm.interfaces.Edible;
 
-public class TomatoPlant extends Crop {
+public class Cornstalk extends Crop {
 
-    public TomatoPlant() {
+    public Cornstalk() {
         super();
     }
-
-    public TomatoPlant(boolean hasBeenHarvested) {
+    public Cornstalk(boolean hasBeenHarvested) {
         super(hasBeenHarvested);
     }
 
     public Edible yield() {
         if (this.isHarvested()) {
             this.restartCycle();
-            return new Tomato();
+            return new EarCorn();
         } else {
             return null;
         }

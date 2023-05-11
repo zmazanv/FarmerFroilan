@@ -7,6 +7,4 @@ import org.junit.Test;
  */
 public class MainApplicationTest {
 
-    @Test
-
 }
