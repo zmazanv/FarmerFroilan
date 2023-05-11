@@ -1,4 +1,7 @@
 package com.zipcodewilmington.froilansfarm;
+
+import com.zipcodewilmington.froilansfarm.classes.*;
+
 /**
  * Created by leon on 2/26/18.
  */
@@ -22,7 +25,7 @@ public class MainApplication {
         // Created the horses objects using a loop
         Horse[] horses = new Horse[10];
         for (int i = 0; i < horses.length; i++) {
-            horses[i] = new Horse(4,"2","black");
+            horses[i] = new Horse();
         }
 
         // Create the Stables using the Horse arrays
@@ -45,21 +48,20 @@ public class MainApplication {
         Field field = new Field(new CropRow[] {rowOne, rowTwo, rowThree, rowFour, rowFive});
 
         Farmer froilan = new Farmer("Froilan");
-        PickupTruck froilansTruck = new PickupTruck("Ford","Cream");
         Tractor froilansTractor = new Tractor();
         CropDuster froilansCropDuster = new CropDuster();
-        Vehicle[] froilainsVehicles = {froilansTractor,froilansTruck,froilansCropDuster};
-        froilan.setVehicles(froilainsVehicles);
-
+        Vehicle[] froilainsVehicles = { froilansTractor, froilansCropDuster };
         Pilot froilanda = new Pilot("Froilanda");
-        Aircraft cropduster = new CropDuster();
-        froilanda.setAircraft(cropduster);
-
         Person[] people = {froilan,froilanda};
-
+        Aircraft cropduster = new CropDuster();
+        froilanda.changePersonalAircraft(cropduster);
         FarmHouse froilansHouse = new FarmHouse(people);
+        Farm froilansFarm = new Farm(froilansHouse, field, coops, stables, froilainsVehicles);
+        Farm hello = new Farm();
 
-        Farm froilansFarm = new Farm(field,stables,coops,froilansHouse);
+
+
+
     }
 
 }
