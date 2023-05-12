@@ -67,11 +67,6 @@ public class MainApplication {
         froilanda.setDay(DayOfTheWeek.Tues);
         froilan.harvest(froilansTractor,froilansFarm,rowOne);
 
-
-
-
-
-
     }
 
 }
