@@ -32,7 +32,6 @@ public class CropRow {
     public void store(List<Crop> crops) {
         this.row.addAll(crops);
     }
-<<<<<<< Updated upstream:src/main/java/com/zipcodewilmington/froilansfarm/classes/CropRow.java
 
     public void fertilize() {
         for (Crop crop : this.row) {
@@ -40,9 +39,8 @@ public class CropRow {
         }
     }
 
-=======
     public List<Crop> getCrops() {
         return row;
     }
->>>>>>> Stashed changes:src/main/java/com/zipcodewilmington/froilansfarm/CropRow.java
+
 }

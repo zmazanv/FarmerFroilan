@@ -1,7 +1,7 @@
 package com.zipcodewilmington.froilansfarm;
 
 import com.zipcodewilmington.froilansfarm.classes.*;
-import com.zipcodewilmington.froilansfarm.enums.Day;
+import com.zipcodewilmington.froilansfarm.enums.DayOfTheWeek;
 
 /**
  * Created by leon on 2/26/18.
@@ -60,16 +60,11 @@ public class MainApplication {
         Farm froilansFarm = new Farm(froilansHouse, field, coops, stables, froilainsVehicles);
         Farm hello = new Farm();
 
-
-
-
-
-        Farm froilansFarm = new Farm(field,stables,coops,froilansHouse);
         froilan.makeNoise();
         froilanda.mount(cropduster);
         froilansTractor.operate(froilansFarm);
 
-        froilanda.setDay(Day.Tues);
+        froilanda.setDay(DayOfTheWeek.Tues);
         froilan.harvest(froilansTractor,froilansFarm,rowOne);
 
 
