@@ -1,4 +1,4 @@
-package com.zipcodewilmington.froilansfarm;
+package com.zipcodewilmington.froilansfarm.classes;
 
 import com.zipcodewilmington.froilansfarm.interfaces.Edible;
 
@@ -8,12 +8,12 @@ public class TomatoPlant extends Crop {
         super();
     }
 
-    public TomatoPlant(boolean hasBeenHarvested) {
-        super(hasBeenHarvested);
+    public TomatoPlant(boolean hasBeenFertilized, boolean hasBeenHarvested) {
+        super(hasBeenFertilized, hasBeenHarvested);
     }
 
     public Edible yield() {
-        if (this.isHarvested()) {
+        if (this.isFertilized() && this.isHarvested()) {
             this.restartCycle();
             return new Tomato();
         } else {

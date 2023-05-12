@@ -1,4 +1,4 @@
-package com.zipcodewilmington.froilansfarm;
+package com.zipcodewilmington.froilansfarm.classes;
 
 import com.zipcodewilmington.froilansfarm.interfaces.Edible;
 
@@ -7,12 +7,12 @@ public class Cornstalk extends Crop {
     public Cornstalk() {
         super();
     }
-    public Cornstalk(boolean hasBeenHarvested) {
-        super(hasBeenHarvested);
+    public Cornstalk(boolean hasBeenFertilized, boolean hasBeenHarvested) {
+        super(hasBeenFertilized, hasBeenHarvested);
     }
 
     public Edible yield() {
-        if (this.isHarvested()) {
+        if (this.isFertilized() && this.isHarvested()) {
             this.restartCycle();
             return new EarCorn();
         } else {
