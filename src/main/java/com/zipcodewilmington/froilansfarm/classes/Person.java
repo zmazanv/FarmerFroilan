@@ -9,6 +9,7 @@ public abstract class Person implements Eater, NoiseMaker {
 
     private String name;
     private DayOfTheWeek day;
+    
     public Person(String name) {
         this.name = name;
     }
@@ -25,6 +26,8 @@ public abstract class Person implements Eater, NoiseMaker {
 
     public void makeNoise() {}
 
-    public void setDay(DayOfTheWeek day){this.day = day;}
+    public void setDay(DayOfTheWeek day) {
+        this.day = day;
+    }
 
 }
